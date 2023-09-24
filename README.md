@@ -11,6 +11,7 @@ YoloV8s:
 ☻ Limitations: YOLO may not perform as well in cases where fine-grained details are crucial. Additionally, training YOLO models can be computationally expensive.
 
 ![Violence Accuracy](https://drive.google.com/file/d/1MujplKrOW_HyAZLsCb1TzQg7BbwWMFF0/view?usp=sharing)
+<img src="https://drive.google.com/file/d/1MujplKrOW_HyAZLsCb1TzQg7BbwWMFF0/view?usp=sharing" alt="Violence Accuracy" width="200" height="300">
 
 ResNet-50 on Binary Class Dataset:
 
