@@ -17,6 +17,7 @@
 ![Training Accuracy](https://drive.google.com/file/d/1Jk5IcBUSLh1sLCstaAaP_6HKmLiGVi1K/view?usp=sharing)
 ![Testing Accuracy](https://drive.google.com/file/d/1TawiSj8cwZd6k63gJlkz5WTrPLzIU0Jv/view?usp=sharing)
 ![Testing Accuracy](https://drive.google.com/file/d/1pgneqm0MDbhXSRXJ_ehf-6QMoxVOV6c9/view?usp=sharing)
+<img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-yy3CpbVM0WNI_I1TlWnUoNmxlX9UgbpAHap4DDbIfo8kdq6ubnhblspNUegpOgxsHLsnhLl7Oon5ceQL_EC-Rxz5cYlg=w1360-h621" alt="Alt Text" width="300" height="200">
 
 ## ResNet-50 on Binary Class Dataset:
 
