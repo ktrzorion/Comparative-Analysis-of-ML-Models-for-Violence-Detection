@@ -28,7 +28,7 @@
 
 ☻ Limitations: A binary classification accuracy of 60.77% may suggest that the model is struggling to learn the features specific to violence detection. Fine-tuning or using a more suitable architecture may be necessary.
 
-![Testing Accuracy](https://drive.google.com/file/d/1XBeQHvvMegRW0RbUDwYMKJQco4t0UEeD/view?usp=sharing)
+![Testing Accuracy](https://lh3.googleusercontent.com/u/0/drive-viewer/AITFw-yy3CpbVM0WNI_I1TlWnUoNmxlX9UgbpAHap4DDbIfo8kdq6ubnhblspNUegpOgxsHLsnhLl7Oon5ceQL_EC-Rxz5cYlg=w1360-h621)
 
 ## ResNet-50 on Multi-Label Class Dataset:
 
