@@ -1,0 +1,21 @@
+The YoloV8s code is a set of Python scripts executed in a Google Colab environment for training and evaluating an object detection model, specifically YOLOv8, for violence detection. Below is an overview of the code and the algorithm used:
+
+Checking GPU Allocation: The code starts by checking whether a GPU has been allocated to the Colab environment using the nvidia-smi command.
+
+Setting Working Directory: The working directory is set to /content/drive/MyDrive/Colab/YOLOv8, which is where the code and data for the YOLOv8 model are located. This path is associated with Google Drive, indicating that the code is likely running in a Google Colab environment, which provides access to Google Drive storage.
+
+Mounting Google Drive: Google Drive is mounted to the Colab environment using the drive.mount method. This allows access to files and data stored in Google Drive.
+
+Installing Ultralytics/YOLOv8: The code installs the Ultralytics library version 8.0.134, which is a deep learning library that includes support for the YOLO (You Only Look Once) object detection algorithm. YOLOv8 is a specific variant of the YOLO algorithm.
+
+Importing Libraries: The necessary libraries and dependencies are imported, including Ultralytics and other utility libraries.
+
+Training Model: The YOLOv8 model is trained for violence detection using the specified configuration parameters. The training process is run for 25 epochs with an image size of 1500 pixels. Plots for training progress are generated.
+
+Checking Working Directory: The code checks the contents of the directory where the training results are stored, including generated images and metrics.
+
+Validation: The trained model is evaluated on a validation dataset. Metrics and evaluation results, such as confusion matrices and PR curves, are generated and displayed.
+
+Testing/Prediction: The trained model is used for making predictions on a test dataset. The model's predictions are displayed as images with bounding boxes and labels.
+
+Displaying Predictions: The code uses a loop to display a selection of prediction results as images with bounding boxes drawn around detected objects.
