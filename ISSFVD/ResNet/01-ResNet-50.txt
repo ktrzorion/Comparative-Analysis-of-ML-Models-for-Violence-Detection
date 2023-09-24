@@ -1,0 +1,46 @@
+I created a deep learning model for image classification using TensorFlow and Keras. It follows a standard deep-learning workflow for image classification tasks. 
+
+Let's break down the code and discuss the algorithm used:
+
+Importing Libraries: The code begins by importing necessary libraries, including TensorFlow, Keras, and other utilities for handling data and visualization.
+
+Constants and Setup:
+
+image_size: Defines the target size for input images.
+batch_size: Specifies the batch size for training.
+epochs: Indicates the number of training epochs.
+num_classes: Defines the number of classes in the classification task (in this case, 2 for violence and non-violence).
+The code also mounts Google Drive for accessing data from Google Drive.
+Downloading and Unzipping Data:
+
+The code uses gdown to download a dataset from Google Drive using a file ID.
+The downloaded ZIP file is then unzipped to access the dataset.
+Data Preparation:
+
+File paths for CSV files containing data annotations (train, test, and valid) are constructed.
+The CSV files are read into Pandas DataFrames for further processing.
+An ImageDataGenerator is created for data augmentation, which is used during training to create variations of the input images to improve model generalization.
+Data Generators:
+
+Data generators are created for training, validation, and testing. These generators yield batches of images and their corresponding labels during training.
+flow_from_dataframe is used to generate data from Pandas DataFrames.
+Model Architecture:
+
+A pre-trained ResNet-50 model is loaded from Keras's applications with weights pre-trained on ImageNet. This model serves as a feature extractor.
+A global average pooling layer is added to reduce the spatial dimensions of the feature maps.
+A fully connected layer with 1024 units and ReLU activation is added for feature transformation.
+Finally, a softmax layer with the number of output classes (2 in this case) is added for classification.
+Model Compilation:
+
+The model is compiled with the Adam optimizer and categorical cross-entropy loss, which is common for multiclass classification tasks.
+Accuracy is chosen as the evaluation metric.
+Model Training:
+
+The model is trained using the fit method, with training and validation data generators.
+Training history is stored, including loss and accuracy values for each epoch.
+Model Evaluation:
+
+The trained model is evaluated on the test data, and test accuracy is printed.
+Visualization:
+
+Training history (loss and accuracy) is plotted using Matplotlib to visualize the training progress.

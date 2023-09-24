@@ -1,0 +1,31 @@
+The DenseNet code is an example of training a binary image classification model for violence detection using the DenseNet121 architecture with TensorFlow and Keras. It also includes code for evaluating the model and visualizing its performance. Let's break down the code and discuss the algorithm used:
+
+Data Loading and Preprocessing:
+
+The code begins by defining paths to the dataset directories, including the training, testing, and validation sets.
+A custom function load_images_and_labels is defined to load images and corresponding labels from the dataset. It applies a threshold (default at 0.5) to convert continuous labels to binary labels (0 or 1).
+The loaded images are resized to (224, 224) pixels and rescaled to values in the range [0, 1].
+Model Architecture (DenseNet121):
+
+The code loads a pre-trained DenseNet121 model from Keras's applications with weights pre-trained on ImageNet.
+A Global Average Pooling 2D layer reduces the spatial dimensions of the feature maps.
+Two dense layers are added on top, with 1024 units and ReLU activation for feature transformation.
+The output layer consists of a single unit with sigmoid activation for binary classification.
+Model Compilation:
+
+The model is compiled with the Adam optimizer with a learning rate of 0.001, binary cross-entropy loss function (common for binary classification), and accuracy as the evaluation metric.
+Model Training:
+
+The model is trained using the fit method with the training dataset and validated on the validation dataset.
+Training is performed for 10 epochs with a batch size of 32.
+Model Evaluation:
+
+The model is evaluated on the test dataset, and the test loss and accuracy are printed.
+Visualization:
+
+The code defines functions for plotting training and validation accuracy/loss curves and for displaying some test images with their true and predicted labels.
+These functions are then used to visualize the model's performance during training and the results on test images.
+Confusion Matrix and Classification Report:
+
+The code generates and displays a confusion matrix to visualize the model's performance on a binary classification task.
+A classification report is also printed, providing metrics such as precision, recall, and F1-score for each class.
